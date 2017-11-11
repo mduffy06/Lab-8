@@ -19,14 +19,14 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Reviews
-        public async Task<IActionResult> Index(string review, string comment)
+        public async Task<IActionResult> Index()
         {
 
+            var mvcMovieContext = _context.Review.Include(r => r.Movie);
+            return View(await mvcMovieContext.ToListAsync());
 
 
-
-
-            return View(await _context.Review.ToListAsync());
+            //return View(await _context.Review.ToListAsync());
         }
 
         // GET: Reviews/Details/5
@@ -58,8 +58,11 @@ namespace MvcMovie.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ReviewID,Reviewer,Comment")] Review review)
+        public async Task<IActionResult> Create([Bind("ReviewID,Reviewer,Comment,MovieID")] Review review)
         {
+
+           
+
             if (ModelState.IsValid)
             {
                 _context.Add(review);

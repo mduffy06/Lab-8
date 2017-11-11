@@ -20,6 +20,7 @@ namespace MvcMovie.Models
         [Required(ErrorMessage = "Field is required")]
         public string Comment { get; set; }
 
-
+        public int MovieID { get; set; }
+        public Movie Movie { get; set; }
     }
 }
