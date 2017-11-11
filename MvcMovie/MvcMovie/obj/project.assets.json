@@ -13125,11 +13125,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Infin\\source\\Lab 8\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+      "projectUniqueName": "C:\\Users\\Infin\\source\\Lab 8\\Lab-8\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "C:\\Users\\Infin\\source\\Lab 8\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+      "projectPath": "C:\\Users\\Infin\\source\\Lab 8\\Lab-8\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
       "packagesPath": "C:\\Users\\Infin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Infin\\source\\Lab 8\\MvcMovie\\MvcMovie\\obj\\",
+      "outputPath": "C:\\Users\\Infin\\source\\Lab 8\\Lab-8\\MvcMovie\\MvcMovie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
