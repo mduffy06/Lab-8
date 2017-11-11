@@ -19,8 +19,13 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Reviews
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string review, string comment)
         {
+
+
+
+
+
             return View(await _context.Review.ToListAsync());
         }
 

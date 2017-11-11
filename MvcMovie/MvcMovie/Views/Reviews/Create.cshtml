@@ -17,9 +17,9 @@
                 <span asp-validation-for="Reviewer" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Comment" class="control-label"></label>
-                <input asp-for="Comment" class="form-control" />
-                <span asp-validation-for="Comment" class="text-danger"></span>
+                <label class="control-label" for="Comment">Comment</label>
+                <textarea class="form-control" data-val="true" data-val-required="Comment can't be empty" id="Comment" name="Comment"></textarea>
+                <span class="text-danger field-validation-valid" data-valmsg-for="Comment" data-valmsg-replace="true"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
