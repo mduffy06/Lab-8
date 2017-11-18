@@ -10,7 +10,7 @@ namespace MvcMovie.Models
     {
 
 
-        public int ReviewID { get; set; }
+        public int ID { get; set; }
 
         [Display(Name = "Please enter your name")]
         [Required(ErrorMessage = "Name is required")]
@@ -21,6 +21,5 @@ namespace MvcMovie.Models
         public string Comment { get; set; }
 
         public int MovieID { get; set; }
-        public Movie Movie { get; set; }
     }
 }
