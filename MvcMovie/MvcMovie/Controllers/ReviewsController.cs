@@ -29,7 +29,7 @@ namespace MvcMovie.Controllers
             {
                 if(item.ID == id)
                 {
-                    ViewData["MovieTitle"] = item.Title;
+                    ViewData["MovieName"] = item.Title;
                     ViewData["MovieID"] = id;
                 }
             }
@@ -45,7 +45,7 @@ namespace MvcMovie.Controllers
                 review.MovieID = (int) id;
                 _context.Add(review);
 
-                ViewData["MovieID"] = review.MovieID;
+                ViewData["ReviewID"] = review.MovieID;
 
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Details", "Movies", new { id = review.MovieID });
@@ -70,9 +70,6 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            ViewData["MovieID"] = review.MovieID;
-                var movies =      from m in _context.Movie
-                                  select m;
 
 
             return View(review);
